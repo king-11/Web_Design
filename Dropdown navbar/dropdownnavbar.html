@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> NavBar With Dropdown Menu</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
+    <script src="https://kit.fontawesome.com/c789baece3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <nav class="navbar">
+            <a href="#" class="nav-item brand ">
+                        DavidGarage 
+                    </a>
+            <ul class="nav-items ">
+                <li class="nav-item hoverdropdown">
+                       <a href="#" class="navlink">Cars </a>
+                        <div class="dropdown">
+                        <ul >
+                    <li><a onclick="changebackground('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80','Porshce')"> Porsche </li>
+                    <li><a onclick="changebackground('https://images.unsplash.com/photo-1580654712603-eb43273aff33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80','Ferrari 458')">   Ferrari 458 </li>
+                        <li> <a onclick="changebackground('https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80','Lamborghini')"> Lamborghini</li>
+                    <li> <a onclick="changebackground('https://images.unsplash.com/photo-1560253787-9c3babc1fab2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80','BMW')">BMW </li>
+                      </ul>
+                  </div>
+                </li >
+                 
+
+
+                <li class="nav-item hoverdropdown">
+                        <a href="#" class="navlink">Bikes</a>
+                          <div class="dropdown">
+                        <ul >
+                    <li> <a onclick="changebackground('https://images.unsplash.com/photo-1515777315835-281b94c9589f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1387&q=80','Harley-Davidson')"> Harley-Davidson</li>
+                    <li> <a onclick="changebackground('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80','Ducati')">Ducati </li>
+                   <li> <a onclick="changebackground('https://images.unsplash.com/photo-1574988057523-8fecfbc3ad43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1378&q=80','KTM')"> KTM</li>
+                    <li> <a onclick="changebackground('https://images.unsplash.com/photo-1544368200-c30c22b3d7c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80','Royal Enfield ')">Royal Enfield </li>
+                      </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item hoverdropdown">
+                        <a href="#" class="navlink">Cycles</a>
+                          <div class="dropdown">
+                        <ul >
+                    <li> <a onclick="changebackground('https://images.unsplash.com/photo-1572970008742-333d7d8d682c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80','Lapierre')"> Lapierre</li>
+                    <li> <a onclick="changebackground('https://images.unsplash.com/photo-1552549678-1a380a5a428b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80','Cannondale')">Cannondale</li>
+                      </ul>
+                  </div>
+                </li>
+            </ul>
+        </nav>
+       
+       <main>
+       <div class="maincontent" >
+        Welcome to David Garage
+       </div>
+       <main>
+        <script type="text/javascript">
+            function changebackground(imageUrl,vehicle){
+             $("body").css("background-image", "url(" + imageUrl + ")"); 
+             $(".maincontent").text("This is my "+vehicle)
+            }
+        </script>
+</body>
+
+</html>

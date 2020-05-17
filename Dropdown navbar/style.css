@@ -1,0 +1,90 @@
+.navbar {
+    display: inline-flex;
+    align-items:center;
+    background-color: #1C649D  ;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+margin:0;
+background-color: #0B2031 ;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.nav-items {
+    display: inline-flex;
+    list-style-type: none;
+    margin:0;
+    width:100%;
+    justify-content: center;
+}
+
+.navlink {
+    margin:10px;
+    color:white;
+    text-decoration: none;
+    font-size:24px;
+
+}
+
+.brand {
+    font-size: 28px;
+    color: red;
+    padding-left: 25px;
+    text-decoration: none;
+}
+.nav-item {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}
+.main{
+     margin-top: 45px;
+}
+
+.maincontent {
+    font-size: 40px;
+    margin-left: 40%;
+    margin-top:8%;
+    color: #7fff00;
+    font-weight: bold;
+}
+.dropdown {
+    display:none;
+     margin-top: 45px;
+     width: 130px;
+    position: absolute;
+    justify-content: center;
+    background: #7FC0F3 ;
+}
+
+.dropdown ul {
+    
+    list-style: none;
+    width:100%;
+    margin-left: -15px;
+}
+
+.dropdown ul li {
+    display:flex;
+   font-size: 20px;
+   font-family: sans-serif;
+   margin-left: -25px;
+   border-bottom: 2px solid black;
+   padding:10px;
+   justify-content: center;
+  
+
+}
+
+.hoverdropdown:hover .dropdown{
+    display:flex;
+    
+}
+
+.dropdown:hover .dropdown{
+    display:flex;
+    
+}
