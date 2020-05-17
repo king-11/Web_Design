@@ -1,90 +1,92 @@
 .navbar {
-    display: inline-flex;
-    align-items:center;
-    background-color: #1C649D  ;
-    margin: 0;
-    width: 100%;
+  display: inline-flex;
+  align-items: center;
+  background-color: #1c649d;
+  margin: 0;
+  width: 100%;
 }
 
 body {
-margin:0;
-background-color: #0B2031 ;
-background-size: cover;
-background-repeat: no-repeat;
+  margin: 0;
+  background-color: #0b2031;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav-items {
-    display: inline-flex;
-    list-style-type: none;
-    margin:0;
-    width:100%;
-    justify-content: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  width: 60%;
+  justify-content: space-evenly;
+  margin-left: auto;
 }
 
 .navlink {
-    margin:10px;
-    color:white;
-    text-decoration: none;
-    font-size:24px;
-
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .brand {
-    font-size: 28px;
-    color: red;
-    padding-left: 25px;
-    text-decoration: none;
+  font-size: 28px;
+  color: red;
+  padding-left: 25px;
+  text-decoration: none;
 }
 .nav-item {
-    display: flex;
-    justify-content: center;
-    width: 120px;
+  display: flex;
+  width: 120px;
 }
-.main{
-     margin-top: 45px;
+.main {
+  margin-top: 45px;
 }
 
 .maincontent {
-    font-size: 40px;
-    margin-left: 40%;
-    margin-top:8%;
-    color: #7fff00;
-    font-weight: bold;
+  font-size: 40px;
+  margin-left: 40%;
+  margin-top: 8%;
+  color: #7fff00;
+  font-weight: bold;
 }
 .dropdown {
-    display:none;
-     margin-top: 45px;
-     width: 130px;
-    position: absolute;
-    justify-content: center;
-    background: #7FC0F3 ;
+  display: none;
+  margin-top: 45px;
+  width: 130px;
+  position: absolute;
+  background: #7fc0f3;
 }
 
 .dropdown ul {
-    
-    list-style: none;
-    width:100%;
-    margin-left: -15px;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .dropdown ul li {
-    display:flex;
-   font-size: 20px;
-   font-family: sans-serif;
-   margin-left: -25px;
-   border-bottom: 2px solid black;
-   padding:10px;
-   justify-content: center;
-  
+  display: flex;
+  justify-content: center;
 
+  font-size: 20px;
+  font-family: sans-serif;
+
+  padding: 10px;
+  cursor: pointer;
+  word-wrap: normal;
 }
 
-.hoverdropdown:hover .dropdown{
-    display:flex;
-    
+.hoverdropdown:hover .dropdown {
+  display: flex;
 }
 
-.dropdown:hover .dropdown{
-    display:flex;
-    
+.dropdown:hover {
+  display: block;
+}
+
+.dropdown ul li:hover {
+  background-color: coral;
+  color: white;
 }
