@@ -1,0 +1,95 @@
+.profile-block-container{
+  width:500px;
+  margin: 0 auto;
+}
+
+.upper-profile-container{
+  height:50%;
+  width:100%;
+  background-image: radial-gradient(#0080ff,#6593e5,#0f52ba);
+  z-index:-1;
+  background-repeat: no-repeat;
+  color:white;
+  text-align: center;
+}
+
+.profile-name{
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 20px;
+  text-shadow: 1px 1px black;
+}
+
+.profile-work{
+  font-size:1.5rem;
+}
+.upper-profile-container img{
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.follow-btn{
+  background-image: linear-gradient(#3DF6AA,#1ED064);
+  border-radius: 20px;
+  width:30%;
+  margin: 0 auto;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 5px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 4px #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.follow-btn:hover{
+  background-image: linear-gradient(#23DB69, #24E939);
+  border-radius: 20px;
+}
+.followers{
+  font-family: cursive;
+  font-weight: 700;
+  text-shadow: 1px 1px black;
+  margin: 5px auto 0px;
+  padding-bottom: 50px;
+  font-size: 0.8rem;
+}
+
+.lower-profile-container{
+  border: 1px solid #eeeeee;
+  padding: 30px;
+}
+
+.headings{
+  display: flex;
+  color: #aaaaaa;
+  font-family: cursive;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.headings div{
+  padding: 5px 68px 5px;
+  border-bottom: 3px solid #aaaaaa;
+}
+
+.active{
+  color:#3DF6AA
+}
+
+.headings .active{
+  border-bottom: 3px solid #3DF6AA;
+}
+
+.active-heading{
+  color: #222222;
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+.content{
+  color: #665566;
+}

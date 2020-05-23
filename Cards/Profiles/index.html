@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Profile Cards</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="profile-block-container">
+      <div class="upper-profile-container">
+        <p class="profile-name">
+          Mark Zuckerberg
+          <br />
+          <span class="profile-work">
+            CEO at Facebook
+          </span>
+        </p>
+        <div>
+          <img src="./avatar.jpg" alt="avatar-image" />
+        </div>
+        <div class="follow-btn">
+          Follow
+        </div>
+        <div class="followers">
+          67,89,098 followers
+        </div>
+      </div>
+      <div class="lower-profile-container">
+        <div class="headings">
+          <div class="about active">About Mark</div>
+          <div class="statistics">Statistics</div>
+        </div>
+        <p class="active-heading">
+          ABOUT
+        </p>
+        <p class="content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      let headings = document.querySelectorAll(".headings div");
+      headings.forEach((heading) => {
+        heading.addEventListener("click", (event) => {
+          document.querySelector(".active").classList.remove("active");
+          event.target.classList.add('active')
+          document.querySelector('.active-heading').innerText = event.target.innerText
+        });
+      });
+    </script>
+  </body>
+</html>
