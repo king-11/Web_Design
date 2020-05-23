@@ -1,0 +1,52 @@
+html{
+  background-color: gray;
+}
+.profile-block{
+  width:25%;
+  margin:100px auto 0;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding:10px;
+}
+
+.profile-screen{
+  transform: translateY(-5%);
+}
+
+.profile-img img{
+  width:90%;
+  height:90%;
+  border-radius: 10px;
+  box-shadow: 0 3px 20px 1px black;
+}
+
+.profile-name figcaption{
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px black;
+  transform: translate(10%,-125%);
+  text-align: left;
+}
+
+.profile-basic-intro{
+  font-size:1.5rem;
+  font-weight: bold;
+  color:#676767;
+}
+
+.profile-contact-info{
+  display:flex;
+  width:80%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.profile-contact-info a{
+  text-decoration: none;
+  color:#121212;
+}
+
+.profile-contact-info a:hover{
+  transform: scale(1.2);
+}
