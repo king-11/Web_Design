@@ -1,0 +1,111 @@
+.profile-block-container{
+  width:25rem;
+  margin: 0 auto;
+  box-shadow: 2px 2px 10px black;
+}
+
+.upper-profile-container{
+  height:50%;
+  width:100%;
+  background-image: radial-gradient(#0080ff,#6593e5,#0f52ba);
+  z-index:-1;
+  background-repeat: no-repeat;
+  color:white;
+  text-align: center;
+}
+
+.profile-name{
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 20px;
+  text-shadow: 1px 1px black;
+}
+
+.profile-work{
+  font-size:1.75rem;
+}
+.upper-profile-container img{
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.follow-btns{
+  display: flex;
+  justify-content: center;
+}
+.follow-btn{
+  background-image: linear-gradient(#3DF6AA,#1ED064);
+  border-radius: 20px;
+  width:25%;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0 5px;
+  padding: 5px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 4px #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.follow-btn:hover{
+  background-image: linear-gradient(#23DB69, #24E939);
+  border-radius: 20px;
+}
+
+.ig{
+  background-image: linear-gradient(#FF1780,#7A1A94);
+}
+
+.ig:hover{
+  background-image: linear-gradient(#DC297A,#A91DB8);
+}
+
+.followers{
+  font-family: cursive;
+  font-weight: 700;
+  text-shadow: 1px 1px black;
+  margin: 5px auto 0px;
+  padding-bottom: 50px;
+  font-size: 0.8rem;
+}
+
+.lower-profile-container{
+  border: 1px solid #eeeeee;
+  padding: 30px;
+}
+
+.headings{
+  display: flex;
+  color: #aaaaaa;
+  font-family: cursive;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.headings div{
+  padding: 5px 31px 5px;
+  border-bottom: 3px solid #aaaaaa;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.active{
+  color:#3DF6AA
+}
+
+.headings .active{
+  border-bottom: 3px solid #3DF6AA;
+}
+
+.active-heading{
+  color: #222222;
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+.content{
+  color: #665566;
+}
