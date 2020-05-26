@@ -1,6 +1,7 @@
 .profile-block-container{
-  width:500px;
+  width:25rem;
   margin: 0 auto;
+  box-shadow: 2px 2px 10px black;
 }
 
 .upper-profile-container{
@@ -21,7 +22,7 @@
 }
 
 .profile-work{
-  font-size:1.5rem;
+  font-size:1.75rem;
 }
 .upper-profile-container img{
   width: 150px;
@@ -29,14 +30,18 @@
   border-radius: 50%;
   margin-bottom: 20px;
 }
+.follow-btns{
+  display: flex;
+  justify-content: center;
+}
 .follow-btn{
   background-image: linear-gradient(#3DF6AA,#1ED064);
   border-radius: 20px;
-  width:30%;
-  margin: 0 auto;
+  width:25%;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
+  margin: 0 5px;
   padding: 5px;
   font-family: sans-serif;
   text-shadow: 1px 1px 4px #000000;
@@ -49,6 +54,15 @@
   background-image: linear-gradient(#23DB69, #24E939);
   border-radius: 20px;
 }
+
+.ig{
+  background-image: linear-gradient(#FF1780,#7A1A94);
+}
+
+.ig:hover{
+  background-image: linear-gradient(#DC297A,#A91DB8);
+}
+
 .followers{
   font-family: cursive;
   font-weight: 700;
@@ -72,8 +86,10 @@
 }
 
 .headings div{
-  padding: 5px 68px 5px;
+  padding: 5px 31px 5px;
   border-bottom: 3px solid #aaaaaa;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .active{

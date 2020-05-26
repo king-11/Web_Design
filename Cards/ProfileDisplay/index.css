@@ -2,7 +2,7 @@ html{
   background-color: gray;
 }
 .profile-block{
-  width:25%;
+  width:25rem;
   margin:100px auto 0;
   text-align: center;
   background-color: #f2f2f2;
@@ -39,7 +39,7 @@ html{
 .profile-contact-info{
   display:flex;
   width:80%;
-  margin: 0 auto;
+  margin: 10px auto;
   justify-content: space-around;
 }
 .profile-contact-info a{
