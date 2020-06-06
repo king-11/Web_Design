@@ -1,0 +1,80 @@
+$shadow: 0px 1px 5px rgba(104, 104, 104, 0.8);
+$root-bottom: 55px;
+$rootleft: 7px;
+.wrapper{
+    position:relative;
+    background-image: url('../images/birds.jpg');
+    background-position: center;
+    width: 300px;
+    height: 580px;
+    border: grey solid;
+    box-shadow: var($shadow);
+    border-radius: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu-icon{
+    position: absolute;
+    bottom:7px;
+    right:7px;
+    cursor: pointer;
+}
+.icon-list-item{
+    display: flex;
+    position: absolute;
+    bottom:55px;
+    right:7px;
+}
+.icon-box{    
+    width: 40px;
+    height: 40px;
+    border: rgb(206, 202, 202) solid;
+    padding-right:0;
+    border-radius: 50%;
+}
+.item{
+    display: flex;
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    justify-content: space-between;
+}
+.icon{
+    color: rgb(190, 183, 183);
+    position: absolute;
+    top: 11px;
+    left: 11px;
+}
+.icon-text{
+    direction: rtl;
+    text-align: right;
+    position: absolute;
+    width: 60px;
+    bottom: 7px;
+    color: #ffffff;
+    padding-top: 4px;
+}
+.icon-container{
+    position: absolute;
+    margin-right: 0px;
+    padding-right: 0px;
+    bottom: 6px;
+}
+.item.open{
+    @for $i from 1 to 8 {
+        &:nth-child(#{$i}){
+            position: absolute;
+            $util:#{-6*#{$i - 1}*#{$i - 1}}px;
+            bottom: calc(#{$root-bottom}*#{$i});
+            transform: translateX(calc(#{#{$util} - 200px}));
+            transition: transform 0.7s;
+        }
+    }
+}
+@for $i from 1 to  7{
+    #item-#{$i}{
+        position: absolute;
+        right:-200px;
+        bottom: calc(#{$root-bottom}*#{$i});
+    }
+}

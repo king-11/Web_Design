@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Menu Bar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/923c5db4bc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h3>Click on the plus icon to see the menu bar</h3>
+    <div class="wrapper">
+        <container class="item" id="item-1">
+            <p class="icon-text">Text</p>
+            <div class="icon-list-item icon-box icon-container
+            ">
+                <i class="fas fa-font fa-lg icon"></i>
+            </div>
+        </container>
+        <container class="item" id="item-2">
+            <p class="icon-text">Camera</p>
+            <div class="icon-list-item icon-box icon-container
+            ">
+                <i class="fas fa-camera-retro fa-lg icon"></i>
+            </div>
+        </container>
+        <container class="item" id="item-3">
+            <p class="icon-text">Chat</p>
+            <div class="icon-list-item icon-box icon-container
+            ">
+                <i class="fas fa-comment fa-lg icon"></i>
+            </div>
+        </container>
+        <container class="item" id="item-4">
+            <p class="icon-text">Contacts</p>
+            <div class="icon-list-item icon-box icon-container
+            ">
+                <i class="fas fa-address-card fa-lg icon"></i>
+            </div>
+        </container>
+        <container class="item" id="item-5">
+            <p class="icon-text">Video</p>
+            <div class="icon-list-item icon-box icon-container
+            ">
+                <i class="fas fa-video fa-lg icon"></i>
+            </div>
+        </container> 
+        <container class="item" id="item-6">
+            <p class="icon-text">Quote</p>
+            <div class="icon-list-item icon-box icon-container
+            ">
+                <i class="fas fa-quote-left fa-lg icon"></i>
+            </div>
+        </container>
+        <div class="menu-icon icon-box">
+            <i class="fas fa-plus fa-lg icon" onclick="toggleMenu()"></i>
+        </div>
+    </div>
+</body>
+<script>
+    var temp=0;
+    function toggleMenu() {
+        console.log("hola!");
+        itemList = document.getElementsByClassName("item");
+        menuIcon = document.getElementsByClassName("menu-icon")[0];
+        if(temp == 0){
+            menuIcon.style.transform = "rotateZ(45deg)";
+            menuIcon.style.transition = "transform 0.2s";
+            for(var i=0;i<itemList.length;i++)
+            {
+                //console.log('hi');
+                itemList[i].classList.add("open");
+            }            
+        }
+        else{
+            menuIcon.style.transform = "rotateZ(0deg)";
+            menuIcon.style.transition = "transform 0.3s";
+            for(var i=0;i<itemList.length;i++)
+            {
+                //console.log('hello');
+                var translateValue = 6*i*i + 200;
+                itemList[i].style.transform = "translateX(${translateValue}px)";
+                itemList[i].style.transition = "transform 0.7s ";
+                itemList[i].classList.remove("open");
+            } 
+        }
+        temp = 1-temp;
+    }
+</script>
+
+</html>
