@@ -1,0 +1,153 @@
+.wrapper {
+  position: relative;
+  background-image: url("../images/birds.jpg");
+  background-position: center;
+  width: 300px;
+  height: 580px;
+  border: grey solid;
+  box-shadow: var(0px 1px 5px rgba(104, 104, 104, 0.8));
+  border-radius: 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.menu-icon {
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  cursor: pointer;
+}
+
+.icon-list-item {
+  display: flex;
+  position: absolute;
+  bottom: 55px;
+  right: 7px;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  border: #cecaca solid;
+  padding-right: 0;
+  border-radius: 50%;
+}
+
+.item {
+  display: flex;
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  justify-content: space-between;
+}
+
+.icon {
+  color: #beb7b7;
+  position: absolute;
+  top: 11px;
+  left: 11px;
+}
+
+.icon-text {
+  direction: rtl;
+  text-align: right;
+  position: absolute;
+  width: 60px;
+  bottom: 7px;
+  color: #ffffff;
+  padding-top: 4px;
+}
+
+.icon-container {
+  position: absolute;
+  margin-right: 0px;
+  padding-right: 0px;
+  bottom: 6px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.item.open:nth-child(1) {
+  position: absolute;
+  bottom: calc(55px*1);
+  transform: translateX(calc(-6*0*0px - 200px));
+  transition: transform 0.7s;
+}
+
+.item.open:nth-child(2) {
+  position: absolute;
+  bottom: calc(55px*2);
+  transform: translateX(calc(-6*1*1px - 200px));
+  transition: transform 0.7s;
+}
+
+.item.open:nth-child(3) {
+  position: absolute;
+  bottom: calc(55px*3);
+  transform: translateX(calc(-6*2*2px - 200px));
+  transition: transform 0.7s;
+}
+
+.item.open:nth-child(4) {
+  position: absolute;
+  bottom: calc(55px*4);
+  transform: translateX(calc(-6*3*3px - 200px));
+  transition: transform 0.7s;
+}
+
+.item.open:nth-child(5) {
+  position: absolute;
+  bottom: calc(55px*5);
+  transform: translateX(calc(-6*4*4px - 200px));
+  transition: transform 0.7s;
+}
+
+.item.open:nth-child(6) {
+  position: absolute;
+  bottom: calc(55px*6);
+  transform: translateX(calc(-6*5*5px - 200px));
+  transition: transform 0.7s;
+}
+
+.item.open:nth-child(7) {
+  position: absolute;
+  bottom: calc(55px*7);
+  transform: translateX(calc(-6*6*6px - 200px));
+  transition: transform 0.7s;
+}
+
+#item-1 {
+  position: absolute;
+  right: -200px;
+  bottom: calc(55px*1);
+}
+
+#item-2 {
+  position: absolute;
+  right: -200px;
+  bottom: calc(55px*2);
+}
+
+#item-3 {
+  position: absolute;
+  right: -200px;
+  bottom: calc(55px*3);
+}
+
+#item-4 {
+  position: absolute;
+  right: -200px;
+  bottom: calc(55px*4);
+}
+
+#item-5 {
+  position: absolute;
+  right: -200px;
+  bottom: calc(55px*5);
+}
+
+#item-6 {
+  position: absolute;
+  right: -200px;
+  bottom: calc(55px*6);
+}
