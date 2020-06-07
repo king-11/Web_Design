@@ -63,6 +63,8 @@
   margin-right: 0px;
   padding-right: 0px;
   bottom: 6px;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .item.open:nth-child(1) {

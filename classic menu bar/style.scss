@@ -59,6 +59,8 @@ $rootleft: 7px;
     margin-right: 0px;
     padding-right: 0px;
     bottom: 6px;
+    cursor: pointer;
+    pointer-events: auto;
 }
 .item.open{
     @for $i from 1 to 8 {
