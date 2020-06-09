@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Flipping Cards</title>
+</head>
+
+<body>
+    <div class="flip">
+        <div class="card">
+            <div class="front">
+                <div class="top"></div>
+                <img src="images/profile.jpg" alt="" height="140px" width="140px">
+                <h2 id="f1">Sundar Pichai</h2>
+                <h3 id="f2">Web Developer</h3>
+                <button id="1">About Me</button>
+            </div>
+            <div class="back">
+                <h1 id="b1">About me</h1>
+                <div class="line" style="bottom:280px"></div>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione amet odit totam suscipit velit, quo unde labore
+                    exercitationem consequatur a, non, assumenda necessitat
+                    quod itaque. In ipsum rerum aperiam sapiente.</p>
+                <div class="line" style="top:260px"></div>
+                <div class="icons">
+                    <a href="#"><i class="fa fa-facebook fa-2x" style="color: blue;"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-2x" style="color:rgb(228, 17, 182);"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x" style="color: rgb(4, 220, 248);"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-2x" style="color: blue;"></i></a>
+                </div>
+                <button id="2">Back</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+        $("#1").click(function () {
+            $(".card").css("transform", "rotateY(180deg)")
+        })
+        $("#2").click(function () {
+            $(".card").css("transform", "rotateY(0deg)")
+        })
+</script>
+
+</html>

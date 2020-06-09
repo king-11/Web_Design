@@ -1,0 +1,130 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800);
+
+body{
+     background-color:rgb(43, 38, 38) ;
+     margin: 0;
+     padding: 0;
+     font-family: 'Open Sans', sans-serif;
+}
+.flip,button,#f1,#f2,#b1,p,.icons,.line{
+    position: absolute;
+    margin: auto;
+}
+
+.flip{
+    
+     height: 400px;
+     width: 300px;
+     perspective: 800px;
+     -webkit-perspective: 800px;
+     border-radius: 15px;
+     top:0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+}
+
+.card{
+   background-color: white;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+    transition: all 2s ease;
+    border-radius: 15px;
+}
+
+.front,.back{
+    backface-visibility:hidden;
+    -webkit-backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+}
+.back{
+     position: relative;
+     bottom:400px;
+     transform: rotateY(180deg);
+     border-radius: 15px;
+     background-color:white;
+}
+
+
+img{
+    position: absolute;
+    left: 80px;
+    top:40px;
+    border-radius: 100px;
+}
+
+button{
+    background-color: transparent;
+    bottom: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border-color:purple;
+    right: 0;
+    left: 0;
+}
+
+.top{
+    width: 100%;
+    background-image: linear-gradient(white,purple);
+    height: 30%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#f1{
+    top:200px;
+    bottom: 0;
+    right: 0;
+    left: 80px; 
+}
+
+#f2{
+    color:purple;
+    top:250px;
+    bottom: 0;
+    right: 0;
+    left: 90px;
+}
+
+#b1{
+    top:10px;
+    bottom: 0;
+    right: 0;
+    left: 80px;
+    color: purple;
+}
+
+p{
+     top:50px;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     padding: 20px;
+}
+
+.icons{
+    top:280px;
+    bottom: 0;
+    right: 0;
+    left: 50px;
+}
+.fa{
+    padding: 10px;
+}
+.line{
+    width:80%;
+    height:.8px;
+    background-color: black;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.fa:hover{
+    opacity: 0.5;
+}
