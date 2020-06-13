@@ -1,0 +1,95 @@
+@mixin centerFlex($d) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .imgbox {
+        position: relative;
+        margin: 10px 10px;
+        @include centerFlex(column);
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            max-height: 400px;
+            pointer-events: all;
+            transition: 500ms all ease-out;
+        }
+
+        .content {
+            z-index: 99;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: ghostwhite;
+            }
+
+            div,
+            a {
+                margin-left: 20px;
+                width: fit-content;
+            }
+
+            span:first-child {
+                font-weight: 400;
+            }
+
+            span:last-child {
+                font-weight: 700;
+            }
+
+            transition: 600ms all ease-in-out;
+            transform: translateY(-20%);
+            overflow: hidden;
+        }
+
+        &:hover .content,
+        .content.display {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: all;
+        }
+
+        &:hover img {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media only screen and (max-width:720px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
