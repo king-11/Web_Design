@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 10px 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper .imgbox {
+  position: relative;
+  margin: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.wrapper .imgbox img {
+  max-width: 100%;
+  max-height: 400px;
+  pointer-events: all;
+  -webkit-transition: 500ms all ease-out;
+  transition: 500ms all ease-out;
+}
+
+.wrapper .imgbox .content {
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: 600ms all ease-in-out;
+  transition: 600ms all ease-in-out;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  overflow: hidden;
+}
+
+.wrapper .imgbox .content a {
+  display: block;
+  text-decoration: none;
+  color: ghostwhite;
+}
+
+.wrapper .imgbox .content div,
+.wrapper .imgbox .content a {
+  margin-left: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.wrapper .imgbox .content span:first-child {
+  font-weight: 400;
+}
+
+.wrapper .imgbox .content span:last-child {
+  font-weight: 700;
+}
+
+.wrapper .imgbox:hover .content,
+.wrapper .imgbox .content.display {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  pointer-events: all;
+}
+
+.wrapper .imgbox:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media only screen and (max-width: 720px) {
+  .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,138 @@
+nav {
+  margin-top: 0;
+  padding: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: ghostwhite;
+  -webkit-box-shadow: 0 13px 4px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 13px 4px -5px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+nav .nav-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+nav .nav-brand:hover {
+  -webkit-transform: scale(1.1) rotateY(360deg);
+          transform: scale(1.1) rotateY(360deg);
+}
+
+nav .nav-item,
+nav .nav-brand {
+  cursor: pointer;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+nav .nav-items {
+  width: 60%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+nav .nav-items .nav-item:hover {
+  -webkit-transform: scale(1.4) rotateY(-360deg);
+          transform: scale(1.4) rotateY(-360deg);
+}
+
+nav .toggle {
+  display: none;
+  pointer-events: none;
+}
+
+nav .toggle div {
+  background-color: ghostwhite;
+  height: 4px;
+  width: 35px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 1.8px 1.8px 0.2px 0.4px rgba(255, 255, 255, 0.7);
+          box-shadow: 1.8px 1.8px 0.2px 0.4px rgba(255, 255, 255, 0.7);
+}
+
+nav .toggle div:not(:first-of-type) {
+  margin-top: 6px;
+}
+
+nav .toggle.active div:nth-of-type(1) {
+  -webkit-transform: rotate(45deg) translateY(13px);
+          transform: rotate(45deg) translateY(13px);
+}
+
+nav .toggle.active div:nth-of-type(2) {
+  opacity: 0;
+}
+
+nav .toggle.active div:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg) translateY(-13px);
+          transform: rotate(-45deg) translateY(-13px);
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    overflow: hidden;
+  }
+  nav .toggle {
+    display: block !important;
+    margin-left: auto;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  nav .nav-items {
+    position: fixed;
+    left: 0;
+    top: 0;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    color: ghostwhite;
+    height: 200px;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-transition: 600ms all ease;
+    transition: 600ms all ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+  nav .nav-items.active {
+    -webkit-transform: translateY(64px);
+            transform: translateY(64px);
+    pointer-events: all;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
