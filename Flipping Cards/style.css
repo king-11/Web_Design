@@ -1,0 +1,129 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800);
+
+body{
+     background-color:rgb(43, 38, 38) ;
+     margin: 0;
+     padding: 0;
+     font-family: 'Open Sans', sans-serif;
+}
+.flip,button,#f1,#f2,#b1,p,.icons,.line{
+    position: absolute;
+    margin: auto;
+}
+
+.flip{
+    
+     height: 400px;
+     width: 300px;
+     perspective: 800px;
+     -webkit-perspective: 800px;
+     border-radius: 15px;
+     top:0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+}
+
+.card{
+   background-color: white;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+    transition: all 2s ease;
+    border-radius: 15px;
+}
+
+.front,.back{
+    backface-visibility:hidden;
+    -webkit-backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+}
+.back{
+     position: relative;
+     bottom:400px;
+     transform: rotateY(180deg);
+     border-radius: 15px;
+     background-color:white;
+}
+
+
+img{
+    position: absolute;
+    left: 80px;
+    top:40px;
+    border-radius: 100px;
+}
+
+button{
+    background-color: transparent;
+    bottom: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border-color:purple;
+    right: 0;
+    left: 0;
+}
+
+.top{
+    width: 100%;
+    background-image: linear-gradient(white,purple);
+    height: 30%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#f1{
+    top:200px;
+    width:inherit;
+    text-align: center;
+}
+
+#f2{
+    color:purple;
+    top:250px;
+    width: inherit;
+    text-align: center;
+}
+
+#b1{
+    top:8px;
+    width: inherit;
+    text-align: center;
+    color: purple;
+}
+
+p{
+     top:60px;
+     padding: 20px;
+}
+
+.icons{
+    top:280px;
+    bottom: 0;
+    right: 0;
+    left: 50px;
+}
+.fa{
+    padding: 10px;
+}
+
+.fa:hover{
+    opacity: 0.5;
+}
+
+p::after,h1::after{
+    content:"";
+    position: absolute;
+    border-bottom: 1px solid black;
+    width: 80%;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    height: 0.5em;
+}
+
