@@ -79,32 +79,26 @@ button{
 
 #f1{
     top:200px;
-    bottom: 0;
-    right: 0;
-    left: 80px; 
+    width:inherit;
+    text-align: center;
 }
 
 #f2{
     color:purple;
     top:250px;
-    bottom: 0;
-    right: 0;
-    left: 90px;
+    width: inherit;
+    text-align: center;
 }
 
 #b1{
-    top:10px;
-    bottom: 0;
-    right: 0;
-    left: 80px;
+    top:8px;
+    width: inherit;
+    text-align: center;
     color: purple;
 }
 
 p{
-     top:50px;
-     bottom: 0;
-     right: 0;
-     left: 0;
+     top:60px;
      padding: 20px;
 }
 
@@ -117,14 +111,19 @@ p{
 .fa{
     padding: 10px;
 }
-.line{
-    width:80%;
-    height:.8px;
-    background-color: black;
-    top: 0;
-    right: 0;
-    left: 0;
-}
+
 .fa:hover{
     opacity: 0.5;
 }
+
+p::after,h1::after{
+    content:"";
+    position: absolute;
+    border-bottom: 1px solid black;
+    width: 80%;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    height: 0.5em;
+}
+
