@@ -92,8 +92,9 @@ nav {
         .nav-items {
             position: fixed;
             left: 0;
-            top: 0;
-            transform: translateY(-200%);
+            top: 60px;
+            transform: scaleY(0);
+            transform-origin: top;
             color: ghostwhite;
             height: 200px;
             width: 100%;
@@ -112,7 +113,7 @@ nav {
         }
 
         .nav-items.active {
-            transform: translateY(64px);
+            transform: scaleY(1);
             pointer-events: all;
         }
     }

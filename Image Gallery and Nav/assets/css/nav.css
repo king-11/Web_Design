@@ -104,9 +104,11 @@ nav .toggle.active div:nth-of-type(3) {
   nav .nav-items {
     position: fixed;
     left: 0;
-    top: 0;
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%);
+    top: 60px;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
     color: ghostwhite;
     height: 200px;
     width: 100%;
@@ -131,8 +133,8 @@ nav .toggle.active div:nth-of-type(3) {
     pointer-events: none;
   }
   nav .nav-items.active {
-    -webkit-transform: translateY(64px);
-            transform: translateY(64px);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
     pointer-events: all;
   }
 }
