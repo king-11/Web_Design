@@ -14,7 +14,7 @@ nav {
   color: ghostwhite;
   -webkit-box-shadow: 0 13px 4px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 13px 4px -5px rgba(0, 0, 0, 0.4);
-  z-index: 999;
+  z-index: 9;
 }
 
 nav .nav-brand {
@@ -60,6 +60,7 @@ nav .nav-items .nav-item:hover {
 nav .toggle {
   display: none;
   pointer-events: none;
+  z-index: 10;
 }
 
 nav .toggle div {

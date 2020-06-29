@@ -9,8 +9,8 @@
   margin: 10px 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .wrapper .imgbox {
@@ -99,19 +99,5 @@
 .wrapper .imgbox:hover img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-@media only screen and (max-width: 720px) {
-  .wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .wrapper {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
 }
 /*# sourceMappingURL=style.css.map */
