@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design | Examples</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        let examples = {
+            "Cards | Profile Display": "./Cards/ProfileDisplay/index.html",
+            "Cards | Profiles": "./Cards/Profiles/index.html",
+            "Classic Menu Bar": "./Classic menu bar/index.html",
+            "Dropdown Navbar": "./Dropdown navbar/index.html",
+            "Fixed Rectangular Nav": "./Fixed Rectangular Nav/index.html",
+            "Flipping Cards": "./Flipping Cards/index.html",
+            "Hamburger Circular Nav": "./Hamburger Circular Nav/index.html",
+            "Image Gallery and Nav": "./Image Gallery and Nav/index.html",
+            "Parallax Scrolling": "./Parallax scrolling/index.html",
+            "Tabs with Icon": "./Tabs with icon and svg/index.html"
+        };
+
+        Object.keys(examples).forEach(function (example) {
+            let div = document.createElement("div");
+            div.innerHTML = "<a href='" + examples[example] + "'><h1>" + example + "</h1></a>";
+            document.getElementById("root").appendChild(div);
+        });
+    </script>
+</body>
+
+</html>
